@@ -1,39 +1,27 @@
-# Election_Analysis
+# Election Analysis Report
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election aduit of a recent total congressional election.
+## Overview of Election Audit: 
 
-1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+The purpose of this analysis is to find the winner of the election and find the county that had the most votes from voters. We found these values as well as total votes, total votes of each county, and total votes of each candidate. Each value was listed as percentages of the total as well.
 
-## Resources
-- Data Source: election_results.csv
-- Software: Python 3.6.1 Visual Studio Code, 1.38.1
 
-## Summary
-The analysis of the election show that:
-- There were "x" votes cast in the election.
-- The candidates were:
-    - Candidate 1
-    - Candidate 2
-    - Candidate 3
-- The candidate results are:
-    - Candidate 1 received "x%" of the vote and "y" number of votes.
-    - Candidate 2 received "x%" of the vote and "y" number of votes.
-    - Candidate 3 received "x%" of the vote and "y" number of votes.
-- The winner of the election was:
-    - Candidate (1,2 or 3), who received "x%" of the vote and "y" number of votes.
+## Election-Audit Results:
 
-## Challenge Overview
-The project presents the opportunity to walk the shoes of the activities & effort carried out post-election emphasizing the time pressure. Hence, it is very important to automate tasks correctly and effectively that would help in reaching to conclusions early. The election audit takes into account the list of votes received from multiple sources (3 in this case) and the Candidate Name against whom the vote is casted and from which county.\n
-  The direction was set through the milestones that need to be accomplished as mentioned in the project overview.\n
-  To accomplish the goal the pre-work is critical which includes cleaning the data to be in similar format so that the program can read the excel file and provide the comprehensive output. If not, all the effort of this program would go in-vain. The main points that could be listed as learning points are:
-  1. Cleaning up of Data & Organizing it
-  2. Build the program to match the outcome/ expectation
-  3. Ability to store the outcome in files for review \n
+The results of our analysis shows the following
+- Total votes in the election was 369,711.
+- Votes by county:
+	- Jefferson had 38,855 votes which was 10.5% of total votes
+	- Denver had 306,055 votes which was 82.2% of total votes
+	- Arapahoe had 24,801 votes which was 6.7% of total votes
+- Denver county had the largest number of votes with 306,055 votes cast which was 82.2% of all the votes cast.
+- Votes by candidate:
+	- Diana DeGette had 272,892 votes which was 73.8% of total votes
+	- Charles Casper Stockham had 85,213 votes which was 23.0% of total votes
+	- Raymond Anthony had 11,606 votes which was 3.1% of total votes
+- The winner of the election was Diana DeGette with 272,892 votes and 73.8% of the total votes in this election.
+<img src="Resources/Election_Results_Screenshot.png" width="350">
 
-## Challenge Summary
-The election audit is completed and the results are in a file for authorized members to view. The goal has been accomplished which ensures the list of candidates is displayed with the votes they received. And, identifying the winning candidate.
+## Election-Audit Summary: to the Election Commission
+
+This code was very efficient in looping through the election data, and returning the accurate total votes and percentage breakdowns of each candidate and county. This code could be used for any election because it creates variables based on where the values are in the CVS file. This code is also universal because it displays the breakdown of the data but also displays the winner of the election. 
+Some modifications that could be made to the code would be combining the for loops to hold the necessary variables in one pass and to code the percentage of votes by candidate and county instead of calculating it (see line 127).
